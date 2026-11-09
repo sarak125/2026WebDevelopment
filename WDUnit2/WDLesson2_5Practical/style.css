@@ -1,20 +1,22 @@
 /* Challenge 8: Change the type of font to Arial for all elements */
 body{
-    font-family: Arial;
+    font-family: Verdana;
+    background-color:rgb(238, 247, 213);
+    color:rgb(57, 76, 0);
 }
 
 /* Challenge 9: Change the background color for all elements with a class of banner.  Choose a color
                 using rgb( )
 */
 #banner{
-    background-color: rgb(73, 182, 109)
+    background-color: rgb(204, 255, 51);
 }
 
 /* Challenge 10: Change the background color for all elements with a class of subbanner.  Choose a color
                 using a hexdecimal value.
 */
 .subbanner{
-    background-color:yellow;
+    background-color:yellowgreen;
 }
 
 /* Challenge 11: Change the radius of the border to 6px and height to 200px for all images inside of all 
@@ -29,15 +31,25 @@ body{
                  apply some type of styling using the filter( ) effect
 */
 #firstGallery img{
-    filter:invert(0%);
+    filter:none;
 }
 
 #firstGallery img:hover{
-    filter:invert(100%);
+    filter:hue-rotate(90deg);
 }
 
 /* Challenge 13: When the visitor moves their mouse over images inside of the element with an id of secondGallery,
                  apply some other type of styling.
 */
+#secondGallery img{
+    filter:none;
+}
+
+#secondGallery img:hover{
+    filter:blur(2px);
+}
 
 /* Challenge 14: Change the transition for all elements to 1 second */
+*{
+    transition: 0.5s;
+}
